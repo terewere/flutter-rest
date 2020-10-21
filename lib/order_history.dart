@@ -67,7 +67,7 @@ class _OrderHistoryState extends State<OrderHistory> {
     var options = Options(headers: headers);
 
     var res =
-        await Dio().get("http://10.0.2.2:8000/api/orders", options: options);
+        await Dio().get("http://45.32.157.58/api/orders", options: options);
 
     setState(() {
       _orders = res.data['data'];
